@@ -28,7 +28,7 @@ List<CarouselItemModel> carouselItems = List.generate(
           Text(
             "MOH. DWI\nCHAIDIER RIZALDI",
             style: GoogleFonts.oswald(
-              color: Colors.white,
+              color: kTextColor,
               fontSize: 40.0,
               fontWeight: FontWeight.w900,
               height: 1.3,
@@ -64,10 +64,10 @@ List<CarouselItemModel> carouselItems = List.generate(
                   child: MouseRegion(
                     cursor: SystemMouseCursors.click,
                     child: Text(
-                      " Got a project? Let's talk. ",
+                      "  Got a project? Let's talk.",
                       style: TextStyle(
                         height: 1.5,
-                        color: Colors.white,
+                        color: kTextColor,
                         fontSize: 15.0,
                       ),
                     ),
@@ -95,7 +95,7 @@ List<CarouselItemModel> carouselItems = List.generate(
                 child: Text(
                   "GET STARTED",
                   style: TextStyle(
-                    color: Colors.white,
+                    color: kTextColor,
                     fontSize: 13.0,
                     fontWeight: FontWeight.bold,
                   ),
@@ -108,7 +108,7 @@ List<CarouselItemModel> carouselItems = List.generate(
     ),
     image: Container(
       child: Image.asset(
-        "assets/person.png",
+        "assets/developer.png",
         fit: BoxFit.contain,
       ),
     ),

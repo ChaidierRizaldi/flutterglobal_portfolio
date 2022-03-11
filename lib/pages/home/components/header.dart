@@ -11,11 +11,10 @@ import 'package:responsive_framework/responsive_framework.dart';
 
 List<HeaderItem> headerItems = [
   HeaderItem(title: "HOME", onTap: () {}),
-  HeaderItem(title: "MY INTRO", onTap: () {}),
   HeaderItem(title: "SERVICES", onTap: () {}),
   HeaderItem(title: "PORTFOLIO", onTap: () {}),
-  HeaderItem(title: "TESTIMONIALS", onTap: () {}),
-  HeaderItem(title: "BLOGS", onTap: () {}),
+  HeaderItem(title: "EDUCATION", onTap: () {}),
+  HeaderItem(title: "CONTACT", onTap: () {}),
   HeaderItem(
     title: "HIRE ME",
     onTap: () {},
@@ -37,7 +36,7 @@ class HeaderLogo extends StatelessWidget {
                 TextSpan(
                   text: "AR",
                   style: GoogleFonts.oswald(
-                    color: Colors.white,
+                    color: kTextColor,
                     fontSize: 32.0,
                     fontWeight: FontWeight.bold,
                   ),
@@ -85,7 +84,7 @@ class HeaderRow extends StatelessWidget {
                           child: Text(
                             item.title,
                             style: TextStyle(
-                              color: Colors.white,
+                              color: kTextColor,
                               fontSize: 13.0,
                               fontWeight: FontWeight.bold,
                             ),
@@ -102,7 +101,7 @@ class HeaderRow extends StatelessWidget {
                           child: Text(
                             item.title,
                             style: TextStyle(
-                              color: Colors.white,
+                              color: kTextColor,
                               fontSize: 13.0,
                               fontWeight: FontWeight.bold,
                             ),
@@ -149,7 +148,7 @@ class Header extends StatelessWidget {
               },
               child: Icon(
                 FlutterIcons.menu_fea,
-                color: Colors.white,
+                color: kTextColor,
                 size: 28.0,
               ),
             ),

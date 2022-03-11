@@ -27,8 +27,8 @@ final List<DesignProcess> desginProcess = [
         "A full stack allround writer that may or may not include a guide for specific creative",
   ),
   DesignProcess(
-    title: "PROMOTE",
-    imagePath: "assets/design.png",
+    title: "TEAMWORK",
+    imagePath: "assets/support.png",
     subtitle:
         "A full stack allround promotion that may or may not include a guide for specific creative",
   ),
@@ -62,7 +62,7 @@ class CvSection extends StatelessWidget {
               Text(
                 "BETTER DEVELOP,\nBETTER EXPERIENCES",
                 style: GoogleFonts.oswald(
-                  color: Colors.white,
+                  color: kTextColor,
                   fontWeight: FontWeight.w900,
                   height: 1.8,
                   fontSize: 18.0,
@@ -127,7 +127,7 @@ class CvSection extends StatelessWidget {
                                 style: GoogleFonts.oswald(
                                     fontSize: 20.0,
                                     fontWeight: FontWeight.w700,
-                                    color: Colors.white),
+                                    color: kTextColor),
                               ),
                             ],
                           ),

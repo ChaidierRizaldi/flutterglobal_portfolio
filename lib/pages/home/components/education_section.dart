@@ -10,27 +10,13 @@ import 'package:responsive_framework/responsive_framework.dart';
 final List<Education> educationList = [
   Education(
     description:
-        "This is a simple education and details about it is stated below",
-    linkName: "www.example.com",
-    period: "2019 - PRESENT",
+        "In 2017 I started to study Informatics at the Islamic University of Indonesia, where I studied for 4 years and graduated on time in 2021. There I deepened my technical knowledge of algorithms and data structures, information technology development management and software engineering. FInally, I was interested how to make apps based on mobile devices, and I was introduced to Android made with Android Studio. Following the times, I also kearned about the development of multi-device application, even using the Flutter framework",
+    period: "2017 - 2021",
   ),
   Education(
     description:
-        "This is a simple education and detail about it is stated below",
-    linkName: "www.example.com",
-    period: "2018 - 2019",
-  ),
-  Education(
-    description:
-        "This is a simple education and detail about it is stated below",
-    linkName: "www.example.com",
-    period: "2017 - 2018",
-  ),
-  Education(
-    description:
-        "This is a simple education and detail about it is stated below",
-    linkName: "www.example.com",
-    period: "2016 - 2017",
+        "I started school in 2014 at the state high school in Jembrana, Bali, and finished my 3 years in 2017. When I was school, I'm very interested in information technology and passionate about technology development, and finally I decided to graduate from high school After looking for colleges speciallizing in information technology",
+    period: "2014 - 2017",
   ),
 ];
 
@@ -73,7 +59,7 @@ class EducationSection extends StatelessWidget {
                 Container(
                   constraints: BoxConstraints(maxWidth: 800.0),
                   child: Text(
-                    "A full stack allround designer that may or may not include a guide for specific creative",
+                    "Below is my journey from high school to earning a Bachelor's Degree in Informatics Engineering",
                     style: TextStyle(
                       color: kCaptionColor,
                       height: 1.5,
@@ -109,26 +95,12 @@ class EducationSection extends StatelessWidget {
                               ),
                               Text(
                                 education.description,
-                                maxLines: 4,
+                                maxLines: 25,
+                                textAlign: TextAlign.justify,
                                 overflow: TextOverflow.ellipsis,
                                 style: TextStyle(
                                   color: kCaptionColor,
                                   height: 1.5,
-                                ),
-                              ),
-                              SizedBox(
-                                height: 20,
-                              ),
-                              MouseRegion(
-                                cursor: SystemMouseCursors.click,
-                                child: GestureDetector(
-                                  onTap: () {},
-                                  child: Text(
-                                    education.linkName,
-                                    style: TextStyle(
-                                      color: kTextColor,
-                                    ),
-                                  ),
                                 ),
                               ),
                               SizedBox(

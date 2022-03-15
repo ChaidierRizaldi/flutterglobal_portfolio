@@ -12,25 +12,25 @@ final List<DesignProcess> desginProcess = [
     title: "DESIGN",
     imagePath: "assets/design.png",
     subtitle:
-        "A full stack allround designer that may or may not include a guide for specific creative",
+        "Ability to design applications to prepare the stage of clarification for appearance of application to be built",
   ),
   DesignProcess(
     title: "DEVELOP",
     imagePath: "assets/develop.png",
     subtitle:
-        "A full stack allround developer that may or may not include a guide for specific creative",
+        "Ability to develop wll designed applications with all on demand or already available features",
   ),
   DesignProcess(
     title: "WRITE",
     imagePath: "assets/write.png",
     subtitle:
-        "A full stack allround writer that may or may not include a guide for specific creative",
+        "Able to create maintainable code easly also makes for a clean architecture",
   ),
   DesignProcess(
     title: "TEAMWORK",
     imagePath: "assets/support.png",
     subtitle:
-        "A full stack allround promotion that may or may not include a guide for specific creative",
+        "Able to collaborate in a productive team and aslo has excellent communication skills",
   ),
 ];
 
@@ -136,6 +136,7 @@ class CvSection extends StatelessWidget {
                           ),
                           Text(
                             desginProcess[index].subtitle,
+                            textAlign: TextAlign.justify,
                             style: TextStyle(
                               color: kCaptionColor,
                               height: 1.5,

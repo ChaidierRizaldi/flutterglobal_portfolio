@@ -9,28 +9,24 @@ import 'package:responsive_framework/responsive_framework.dart';
 
 final List<FooterItem> footerItems = [
   FooterItem(
-    iconPath: "assets/mappin.png",
+    iconPath: "assets/placeholder.png",
     title: "ADDRESS",
-    text1: "999 Carter Street",
-    text2: "Sailor Springs, IL 64234",
+    text1: "Jakarta, Indonesia",
   ),
   FooterItem(
-    iconPath: "assets/phone.png",
-    title: "PHONE",
-    text1: "+1 618-689-9604",
-    text2: "+1 781-689-9632",
+    iconPath: "assets/linkedin.png",
+    title: "LINKEDIN",
+    text1: "chaidierrizaldi",
   ),
   FooterItem(
-    iconPath: "assets/email.png",
+    iconPath: "assets/mail.png",
     title: "EMAIL",
-    text1: "hello@example.com",
-    text2: "info@flutterpanda.com",
+    text1: "aldirizaldi318@gmail.com",
   ),
   FooterItem(
-    iconPath: "assets/whatsapp.png",
-    title: "WHATSAPP",
-    text1: "+234 901-134-0095",
-    text2: "+234 901-134-0095",
+    iconPath: "assets/twitter.png",
+    title: "TWITTER",
+    text1: "@chaidierizaldi",
   )
 ];
 
@@ -72,10 +68,10 @@ Widget _buildUi(double width, BuildContext context) {
                               : constraints.maxWidth / 4.0 - 20.0,
                           child: Container(
                             child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Image.asset(
                                       footerItem.iconPath,
@@ -98,7 +94,7 @@ Widget _buildUi(double width, BuildContext context) {
                                   height: 15.0,
                                 ),
                                 RichText(
-                                  textAlign: TextAlign.start,
+                                  textAlign: TextAlign.center,
                                   text: TextSpan(
                                     children: [
                                       TextSpan(
@@ -108,12 +104,6 @@ Widget _buildUi(double width, BuildContext context) {
                                           height: 1.8,
                                         ),
                                       ),
-                                      TextSpan(
-                                        text: "${footerItem.text2}\n",
-                                        style: TextStyle(
-                                          color: kCaptionColor,
-                                        ),
-                                      )
                                     ],
                                   ),
                                 )

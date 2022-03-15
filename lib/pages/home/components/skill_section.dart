@@ -8,26 +8,11 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 List<Skill> skills = [
-  Skill(
-    skill: "Dart",
-    percentage: 80,
-  ),
-  Skill(
-    skill: "Java",
-    percentage: 70,
-  ),
-  Skill(
-    skill: "Flutter",
-    percentage: 80,
-  ),
-  Skill(
-    skill: "Figma",
-    percentage: 65,
-  ),
-  Skill(
-    skill: "Adobe XD",
-    percentage: 65,
-  ),
+  Skill(skill: "Dart", percentage: 80, description: "Competent"),
+  Skill(skill: "Java", percentage: 70, description: "Advance"),
+  Skill(skill: "Flutter", percentage: 83, description: "Competent"),
+  Skill(skill: "Figma", percentage: 60, description: "Advance"),
+  Skill(skill: "Adobe XD", percentage: 65, description: "Advance"),
 ];
 
 class SkillSection extends StatelessWidget {
@@ -124,7 +109,7 @@ class SkillSection extends StatelessWidget {
                                       width: 10.0,
                                     ),
                                     Text(
-                                      "${skill.percentage}%",
+                                      "${skill.description}",
                                       style: TextStyle(
                                         color: kTextColor,
                                         fontSize: 16.0,
